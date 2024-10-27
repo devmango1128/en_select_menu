@@ -49,15 +49,15 @@ let SELECT_MENU = {
          try {
             await navigator.share({
                title: 'What’s on the menu today?',
-               text: `Wanna have [${_this.selectMenu}] together?`,
-               url: 'https://play.google.com/store/apps/details?id=com.selectmenu.devmango1128&pcampaignid=web_share'
+               text: `\nWanna have [${_this.selectMenu}] together?`,
+               url: '\nhttps://play.google.com/store/apps/details?id=com.selectmenu.devmango1128&pcampaignid=web_share'
             });
             console.log('공유 성공!');
          } catch (error) {
             console.error('공유 실패:', error);
          }
       } else if (window.Android) {
-         await window.Android.share('What’s on the menu today?', `Wanna have [${_this.selectMenu}] together?`, 'https://play.google.com/store/apps/details?id=com.selectmenu.devmango1128&pcampaignid=web_share');
+         await window.Android.share('What’s on the menu today?', `\nWanna have [${_this.selectMenu}] together?`, '\nhttps://play.google.com/store/apps/details?id=com.selectmenu.devmango1128&pcampaignid=web_share');
       } else {
          alert('This browser does not support the recommendation feature.');
       }
