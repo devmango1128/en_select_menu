@@ -5,7 +5,7 @@ let EN_SELECT_MENU = {
 
       const _this = this;
 
-      const url = '/en_selectMenu/menu.json?date=' + new Date();
+      const url = '/en_select_menu/menu.json?date=' + new Date();
       const xhr = new XMLHttpRequest();
 
       xhr.open('GET', url, true);
