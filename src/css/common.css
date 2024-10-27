@@ -16,9 +16,9 @@ body {
 
 .title {
     display: inline-block;
-    padding: 20px 0px;
+    padding: 20px 0;
     width: 100%;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .content {
